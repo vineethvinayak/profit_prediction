@@ -14,8 +14,7 @@ data = pd.read_csv("enter_csv_file")
 X = data.drop('Profit', axis=1)
 y = data['Profit']
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, 
-random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train Linear Regression model
 LR = LinearRegression()
